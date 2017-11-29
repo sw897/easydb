@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use PDOStatement;
 
 /**
  * Class ExecTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 class PrepareTest extends EasyDBWriteTest
 {
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBInsertManyProvider
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
      * @param callable $cb
      * @param array $maps
      */

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use InvalidArgumentException;
-use ParagonIE\EasyDB\Factory;
+use EasyDB\Factory;
 
 class Is1DArrayTest extends EasyDBTest
 {

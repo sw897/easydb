@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use Exception;
-use ParagonIE\EasyDB\Factory;
+use EasyDB\Factory;
 
 /**
  * Class EasyDBTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 abstract class EasyDBWriteTest extends EasyDBTest
 {

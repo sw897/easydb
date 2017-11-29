@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
-use ParagonIE\EasyDB\EasyDB;
-use ParagonIE\EasyDB\Factory;
+use EasyDB\EasyDB;
+use EasyDB\Factory;
 use PHPUnit_Framework_TestCase;
 
 /**
  * Class EasyDBTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 abstract class EasyDBTest extends PHPUnit_Framework_TestCase
 {

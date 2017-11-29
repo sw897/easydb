@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use InvalidArgumentException;
-use ParagonIE\EasyDB\EasyDB;
+use EasyDB\EasyDB;
 use PDOException;
 
 class InsertManyFlatTransactionTest extends

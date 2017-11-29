@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB;
+namespace EasyDB;
 
-use \ParagonIE\EasyDB\Exception as Issues;
+use \EasyDB\Exception as Issues;
 use \Throwable;
 
 /**
  * Class EasyDB
- * @package ParagonIE\EasyDB
+ * @package EasyDB
  */
 class EasyDB
 {

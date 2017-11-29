@@ -1,12 +1,12 @@
 <?php
 
-namespace ParagonIE\EasyDB;
+namespace EasyDB;
 
 use RuntimeException;
 
 /**
  * Class EasyStatement
- * @package ParagonIE\EasyDB
+ * @package EasyDB
  */
 class EasyStatement
 {

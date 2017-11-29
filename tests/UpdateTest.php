@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use InvalidArgumentException;
 
@@ -91,7 +91,7 @@ class UpdateTest extends EasyDBWriteTest
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBProvider
-     * @depends      ParagonIE\EasyDB\Tests\InsertManyTest::testInsertMany
+     * @depends      EasyDB\Tests\InsertManyTest::testInsertMany
      * @param callable $cb
      */
     public function testUpdate(callable $cb)

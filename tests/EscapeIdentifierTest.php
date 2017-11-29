@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
-use ParagonIE\EasyDB\EasyDB;
-use ParagonIE\EasyDB\Exception as Issues;
+use EasyDB\EasyDB;
+use EasyDB\Exception as Issues;
 use PHPUnit_Framework_Error;
 use TypeError;
 

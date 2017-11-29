@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
-use ParagonIE\EasyDB\Factory;
+use EasyDB\Factory;
 
 class GetDriverTest extends EasyDBTest
 {

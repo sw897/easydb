@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 /**
  * Class EasyDBTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 class ErrorCodeTest extends EasyDBTest
 {

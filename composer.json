@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ParagonIE\\EasyDB\\": "src"
+            "EasyDB\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ParagonIE\\EasyDB\\Tests\\": "tests"
+            "EasyDB\\Tests\\": "tests"
         }
     },
     "require": {

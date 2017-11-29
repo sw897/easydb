@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB;
+namespace EasyDB;
 
-use \ParagonIE\EasyDB\Exception as Issues;
+use \EasyDB\Exception as Issues;
 
 /**
  * Class Factory
  *
- * @package ParagonIE\EasyDB
+ * @package EasyDB
  */
 abstract class Factory
 {
@@ -19,7 +19,7 @@ abstract class Factory
      * @param string $username
      * @param string $password
      * @param array $options
-     * @return \ParagonIE\EasyDB\EasyDB
+     * @return \EasyDB\EasyDB
      * @throws Issues\ConstructorFailed
      */
     public static function create(

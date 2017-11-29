@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use Exception;
-use ParagonIE\EasyDB\EasyDB;
+use EasyDB\EasyDB;
 use PDO;
 use PDOException;
 
@@ -13,7 +13,7 @@ class SetAttributeTest extends GetAttributeTest
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBWithPDOAttributeProvider
-     * @depends      ParagonIE\EasyDB\Tests\GetAttributeTest::testAttribute
+     * @depends      EasyDB\Tests\GetAttributeTest::testAttribute
      * @param callable $cb
      * @param $attr
      * @param string $attrName

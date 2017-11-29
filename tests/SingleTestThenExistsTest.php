@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
-use ParagonIE\EasyDB\EasyDB;
+use EasyDB\EasyDB;
 
 class SingleTestThenExistsTest extends EasyDBWriteTest
 {
@@ -16,12 +16,12 @@ class SingleTestThenExistsTest extends EasyDBWriteTest
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBInsertManyProvider
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteThrowsException
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteTableNameEmptyThrowsException
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteTableNameInvalidThrowsException
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteConditionsReturnsNull
-     * @depends      ParagonIE\EasyDB\Tests\InsertManyTest::testInsertMany
-     * @depends      ParagonIE\EasyDB\Tests\SingleTest::testMethod
+     * @depends      EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteThrowsException
+     * @depends      EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteTableNameEmptyThrowsException
+     * @depends      EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteTableNameInvalidThrowsException
+     * @depends      EasyDB\Tests\Is1DArrayThenDeleteReadOnlyTest::testDeleteConditionsReturnsNull
+     * @depends      EasyDB\Tests\InsertManyTest::testInsertMany
+     * @depends      EasyDB\Tests\SingleTest::testMethod
      * @param callable $cb
      * @param array $insertMany
      */

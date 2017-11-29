@@ -1,5 +1,5 @@
 <?php
-namespace ParagonIE\EasyDB\Exception;
+namespace EasyDB\Exception;
 
 class QueryError extends \RuntimeException
 {

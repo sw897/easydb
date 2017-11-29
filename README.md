@@ -56,7 +56,7 @@ we end up repeating ourselves a lot.
 ### The EasyDB Solution
 
 ```php
-$db = \ParagonIE\EasyDB\Factory::create(
+$db = \EasyDB\Factory::create(
     'mysql:host=localhost;dbname=something',
     'username',
     'putastrongpasswordhere'
@@ -226,7 +226,7 @@ $pdo = $db->getPdo();
 **Yes!** It's as simple as doing this:
 
 ```php
-$easy = new \ParagonIE\EasyDB\EasyDB($pdo, 'mysql');
+$easy = new \EasyDB\EasyDB($pdo, 'mysql');
 ```
 
 ## How do I run tests ?

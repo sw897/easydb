@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 /**
  * Class ExecTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 class QuoteTest extends EasyDBTest
 {
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBQuoteProvider
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
      * @param callable $cb
      * @param $quoteThis
      * @param array $expectOneOfThese

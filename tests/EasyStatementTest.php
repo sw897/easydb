@@ -1,13 +1,13 @@
 <?php
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
-use ParagonIE\EasyDB\EasyStatement;
+use EasyDB\EasyStatement;
 use PHPUnit_Framework_TestCase as TestCase;
 use RuntimeException;
 
 /**
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 class EasyStatementTest extends TestCase
 {

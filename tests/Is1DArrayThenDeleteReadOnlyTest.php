@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use InvalidArgumentException;
 
@@ -10,7 +10,7 @@ class Is1DArrayThenDeleteReadOnlyTest extends EasyDBTest
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBProvider
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayTest::testIs1DArray
+     * @depends      EasyDB\Tests\Is1DArrayTest::testIs1DArray
      * @param callable $cb
      */
     public function testDeleteThrowsException(callable $cb)

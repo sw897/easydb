@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace ParagonIE\EasyDB\Tests;
+namespace EasyDB\Tests;
 
 use InvalidArgumentException;
 
 /**
  * Class EasyDBTest
- * @package ParagonIE\EasyDB\Tests
+ * @package EasyDB\Tests
  */
 class EscapeValueSetTest extends EasyDBTest
 {
@@ -219,7 +219,7 @@ class EscapeValueSetTest extends EasyDBTest
 
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBProvider
-     * @depends      ParagonIE\EasyDB\Tests\Is1DArrayTest::testIs1DArray
+     * @depends      EasyDB\Tests\Is1DArrayTest::testIs1DArray
      * @param callable $cb
      */
     public function testEscapeValueSetFailsIs1DArray(callable $cb)
@@ -231,8 +231,8 @@ class EscapeValueSetTest extends EasyDBTest
 
     /**
      * @dataProvider badFactoryCreateArgument2EasyDBEscapeValueSetProvider
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
      * @param callable $cb
      * @param array $escapeThis
      * @param string $escapeThatAsType
@@ -247,8 +247,8 @@ class EscapeValueSetTest extends EasyDBTest
     /**
      * @dataProvider goodFactoryCreateArgument2EasyDBEscapeValueSetProvider
      * @depends      testEscapeValueSetThrowsException
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
-     * @depends      ParagonIE\EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifier
+     * @depends      EasyDB\Tests\EscapeIdentifierTest::testEscapeIdentifierThrowsSomething
      * @param callable $cb
      * @param array $escapeThis
      * @param string $escapeThatAsType
