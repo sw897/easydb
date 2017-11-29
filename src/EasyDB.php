@@ -181,37 +181,38 @@ class EasyDB
                 'Invalid identifier: Must be a non-empty string.'
             );
         }
-        switch ($this->dbEngine) {
-            case 'sqlite':
-                $patternWithSep = '/[^\.0-9a-zA-Z_\/]/';
-                $patternWithoutSep = '/[^0-9a-zA-Z_\/]/';
-                break;
-            default:
-                $patternWithSep = '/[^\.0-9a-zA-Z_]/';
-                $patternWithoutSep = '/[^0-9a-zA-Z_]/';
-        }
-        if ($this->allowSeparators) {
-            $str = \preg_replace($patternWithSep, '', $string);
-            if (\strpos($str, '.') !== false) {
-                $pieces = \explode('.', $str);
-                foreach ($pieces as $i => $p) {
-                    $pieces[$i] = $this->escapeIdentifier($p, $quote);
-                }
-                return \implode('.', $pieces);
-            }
-        } else {
-            $str = \preg_replace($patternWithoutSep, '', $string);
-            if ($str !== \trim($string)) {
-                if ($str === \str_replace('.', '', $string)) {
-                    throw new Issues\InvalidIdentifier(
-                        'Separators (.) are not permitted.'
-                    );
-                }
-                throw new Issues\InvalidIdentifier(
-                    'Invalid identifier: Invalid characters supplied.'
-                );
-            }
-        }
+        // switch ($this->dbEngine) {
+            // case 'sqlite':
+                // $patternWithSep = '/[^\.0-9a-zA-Z_\/]/';
+                // $patternWithoutSep = '/[^0-9a-zA-Z_\/]/';
+                // break;
+            // default:
+                // $patternWithSep = '/[^\.0-9a-zA-Z_]/';
+                // $patternWithoutSep = '/[^0-9a-zA-Z_]/';
+        // }
+        // if ($this->allowSeparators) {
+            // $str = \preg_replace($patternWithSep, '', $string);
+            // if (\strpos($str, '.') !== false) {
+                // $pieces = \explode('.', $str);
+                // foreach ($pieces as $i => $p) {
+                    // $pieces[$i] = $this->escapeIdentifier($p, $quote);
+                // }
+                // return \implode('.', $pieces);
+            // }
+        // } else {
+            // $str = \preg_replace($patternWithoutSep, '', $string);
+            // if ($str !== \trim($string)) {
+                // if ($str === \str_replace('.', '', $string)) {
+                    // throw new Issues\InvalidIdentifier(
+                        // 'Separators (.) are not permitted.'
+                    // );
+                // }
+                // throw new Issues\InvalidIdentifier(
+                    // 'Invalid identifier: Invalid characters supplied.'
+                // );
+            // }
+        // }
+        $str = \trim($string);
 
         // The first character cannot be [0-9]:
         if (\preg_match('/^[0-9]/', $str)) {
@@ -550,7 +551,7 @@ class EasyDB
             }
         }
 
-        $columns = \array_map([$this, 'escapeIdentifier'], $columns);
+        //$columns = \array_map([$this, 'escapeIdentifier'], $columns);
         $placeholders = \array_fill(0, \count($columns), '?');
 
         return \sprintf(
